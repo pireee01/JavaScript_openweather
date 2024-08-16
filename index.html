@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #weatherContainer {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #weatherData {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        #weatherData h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        #weatherData p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Data Viewer</h1>
+    <div id="weatherContainer">
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="getWeather">Get Weather</button>
+        <div id="weatherData">Weather data will appear here.</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
